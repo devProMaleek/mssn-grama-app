@@ -30,29 +30,29 @@ const config: Config = {
       clipPath: ['responsive'],
     },
   },
-  plugins: [
-    nextui({
-      themes: {
-        light: {
-          colors: {
-            primary: {
-              DEFAULT: "#FFE10C",
-              50: "#fffcda",
-              100: "#fff6ad",
-              200: "#ffef7d",
-              300: "#ffe94b",
-              400: "#ffe31a",
-              500: "#e6c900",
-              600: "#b39c00",
-              700: "#807000",
-              800: "#4d4300",
-              900: "#1c1600",
-            },
+  plugins: [require("tailwind-scrollbar-hide"),
+  nextui({
+    themes: {
+      light: {
+        colors: {
+          primary: {
+            DEFAULT: "#FFE10C",
+            50: "#fffcda",
+            100: "#fff6ad",
+            200: "#ffef7d",
+            300: "#ffe94b",
+            400: "#ffe31a",
+            500: "#e6c900",
+            600: "#b39c00",
+            700: "#807000",
+            800: "#4d4300",
+            900: "#1c1600",
           },
         },
       },
-    }),
-    require("flowbite/plugin"),
+    },
+  }),
+  require("flowbite/plugin"),
   ],
 };
 export default config;

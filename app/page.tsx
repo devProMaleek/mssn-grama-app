@@ -16,6 +16,7 @@ import Speaker1 from "@/public/assets/images/speaker-1.svg";
 import Speaker2 from "@/public/assets/images/speaker-2.svg";
 import Speaker3 from "@/public/assets/images/speaker-3.svg";
 import Speaker4 from "@/public/assets/images/speaker-4.svg";
+import EmptySpeaker from "@/public/assets/images/emptySpeakerImage.svg";
 import Tickets from "@/public/assets/images/ticket.svg";
 
 type Countdown = {
@@ -65,7 +66,7 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      calculateCountdown(new Date("2024-05-24"));
+      calculateCountdown(new Date("2024-05-25"));
     }, 1000);
 
     return () => clearInterval(interval);
@@ -163,7 +164,7 @@ export default function Home() {
           <div className="flex items-center space-x-3 justify-center mt-10">
             <div className="bg-black shadow-md shadow-primary px-5 py-3 md:px-8 md:py-4">
               <p className="text-primary text-xs md:text-base/4 font-bold tracking-wider">
-                24TH OF MAY 2024
+                25TH OF MAY 2024
               </p>
             </div>
             <div className="bg-black shadow-md shadow-primary px-5 py-3 md:px-8 md:py-4">
@@ -260,11 +261,11 @@ export default function Home() {
                         className={`${plusJakartaSans.className} text-white md:text-base/6 font-normal text-sm/6 tracking-normal max-w-md`}
                       >
                         The GRAMA Conference is a professional focused
-                        conference For muslim graduates Under the MSSN LSAU ,
-                        That gathers Young Adults Around Lagos For an educative,
-                        informative and Networking Session, to foster knowledge
-                        sharing and capacity building, aiming to strengthen The
-                        professional workspace amongst it Members.
+                        conference For muslim graduates, that gathers young
+                        adults around Lagos for an educative, informative and
+                        networking session, to foster knowledge sharing and
+                        capacity building, aiming to strengthen the professional
+                        workspace amongst it members.
                       </p>
                     </div>
                     <div className="text-center md:text-start">
@@ -303,57 +304,98 @@ export default function Home() {
                 Event Speakers
               </h4>
             </div>
-            <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 mx-auto">
-              <div className="space-y-2 md:space-y-4">
-                <div className="">
-                  <Image src={Speaker1} className="mx-auto" alt="Speaker 1" />
+            <div className="p-4 overflow-x-auto scrollbar-hide md:p-6">
+              <div className="flex items-center space-x-6 flex-nowrap">
+                <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
+                  <div className="">
+                    <Image src={EmptySpeaker} className="mx-auto" alt="Speaker 4" />
+                  </div>
+                  <div className="text-center space-y-1">
+                    <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
+                      LATEEF SURAKATU
+                    </h6>
+                    <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
+                      CEO, UNKNOWN COMPANY
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center space-y-1">
-                  <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-widest">
-                    MUSTAPHA KELANI
-                  </h6>
-                  <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                    Group Head of HR at Dentsu Nigeria
-                  </p>
+                <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
+                  <div className="">
+                    <Image src={Speaker4} className="mx-auto" alt="Speaker 4" />
+                  </div>
+                  <div className="text-center space-y-1">
+                    <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
+                      AZEEZAH MUSE-SADIQ
+                    </h6>
+                    <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
+                      Partner, Banwo & Ighodalo
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="space-y-2 md:space-y-4">
-                <div className="">
-                  <Image src={Speaker2} className="mx-auto" alt="Speaker 2" />
+                <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
+                  <div className="">
+                    <Image src={Speaker3} className="mx-auto" alt="Speaker 3" />
+                  </div>
+                  <div className="text-center space-y-1">
+                    <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
+                      RILIWAN AKEYEWALE
+                    </h6>
+                    <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
+                      Founder, TechPlan Africa
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center space-y-1">
-                  <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
-                    ABDUL-LATEEF ADEDEJI
-                  </h6>
-                  <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                    The Progressive Teacher Expertise
-                  </p>
+                <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
+                  <div className="">
+                    <Image src={EmptySpeaker} className="mx-auto" alt="Speaker 3" />
+                  </div>
+                  <div className="text-center space-y-1">
+                    <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
+                      ABDUR-RASHEED AJAO
+                    </h6>
+                    <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
+                      CEO, UNKNOWN COMPANY
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="space-y-2 md:space-y-4">
-                <div className="">
-                  <Image src={Speaker3} className="mx-auto" alt="Speaker 3" />
+                <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
+                  <div className="">
+                    <Image src={EmptySpeaker} className="mx-auto" alt="Speaker 3" />
+                  </div>
+                  <div className="text-center space-y-1">
+                    <h6 className="md:text-2xl/5 text-base/5 font-extrabold md:text-nowrap text-white tracking-wide">
+                      DR HALIMAT ADEDEJI-ADENOLA
+                    </h6>
+                    <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
+                      CEO, UNKNOWN COMPANY
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center space-y-1">
-                  <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
-                    RILIWAN AKEYEWALE
-                  </h6>
-                  <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                    Founder, TechPlan Africa
-                  </p>
+                <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
+                  <div className="">
+                    <Image src={Speaker1} className="mx-auto" alt="Speaker 1" />
+                  </div>
+                  <div className="text-center space-y-1">
+                    <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-widest">
+                      MUSTAPHA KELANI
+                    </h6>
+                    <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
+                      Group Head of HR at Dentsu Nigeria
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="space-y-2 md:space-y-4">
-                <div className="">
-                  <Image src={Speaker4} className="mx-auto" alt="Speaker 4" />
-                </div>
-                <div className="text-center space-y-1">
-                  <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
-                    AZEEZAH MUSE-SADIQ
-                  </h6>
-                  <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                    Partner, Banwo & Ighodalo
-                  </p>
+                <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
+                  <div className="">
+                    <Image src={Speaker2} className="mx-auto" alt="Speaker 2" />
+                  </div>
+                  <div className="text-center space-y-1">
+                    <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
+                      ABDUL-LATEEF ADEDEJI
+                    </h6>
+                    <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
+                      The Progressive Teacher Expertise
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -447,8 +489,8 @@ export default function Home() {
                       <p
                         className={`${plusJakartaSans.className} text-white text-sm/6 font-normal md:text-lg/6`}
                       >
-                        For Sponsorship and Advert Placement Please Reach Out to
-                        us
+                        For sponsorship and advert placement, Please reach uut
+                        to us
                       </p>
                     </div>
                   </div>
@@ -504,7 +546,10 @@ export default function Home() {
                       <AiOutlineInstagram className="text-black w-3 h-3 md:w-5 md:h-5" />
                     </div>
                     <div className="text-primary">
-                      <Link href="/" className="text-sm md:text-xl/6 font-extrabold tracking-wide">
+                      <Link
+                        href="/"
+                        className="text-sm md:text-xl/6 font-extrabold tracking-wide"
+                      >
                         /Grama lagos
                       </Link>
                     </div>
@@ -514,7 +559,10 @@ export default function Home() {
                       <AiOutlineTwitter className="text-black w-3 h-3 md:w-5 md:h-5" />
                     </div>
                     <div className="text-primary">
-                      <Link href="/" className="text-sm md:text-xl/6 font-extrabold tracking-wide">
+                      <Link
+                        href="/"
+                        className="text-sm md:text-xl/6 font-extrabold tracking-wide"
+                      >
                         /Grama lagos
                       </Link>
                     </div>
@@ -524,7 +572,10 @@ export default function Home() {
                       <FaFacebookF className="text-black w-3 h-3 md:w-5 md:h-5" />
                     </div>
                     <div className="text-primary">
-                      <Link href="/" className="text-sm md:text-xl/6 font-extrabold tracking-wide">
+                      <Link
+                        href="/"
+                        className="text-sm md:text-xl/6 font-extrabold tracking-wide"
+                      >
                         /Grama lagos
                       </Link>
                     </div>
