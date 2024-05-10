@@ -522,7 +522,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="">
-                    <Link href="tel:+2348098081287">
+                    <Link href="tel:+2348133465044">
                       <Button
                         color="primary"
                         radius="full"
