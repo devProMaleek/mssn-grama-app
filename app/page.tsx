@@ -16,6 +16,7 @@ import Speaker1 from "@/public/assets/images/speaker-1.svg";
 import Speaker2 from "@/public/assets/images/speaker-2.svg";
 import Speaker3 from "@/public/assets/images/speaker-3.svg";
 import Speaker4 from "@/public/assets/images/speaker-4.svg";
+import Speaker5 from "@/public/assets/images/speaker-5.svg";
 import EmptySpeaker from "@/public/assets/images/emptySpeakerImage.svg";
 import Tickets from "@/public/assets/images/ticket.svg";
 
@@ -97,12 +98,14 @@ export default function Home() {
             </span>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
-              type="button"
-              className="bg-primary hover:bg-primary-600 font-bold rounded-2xl text-black md:text-xl text-sm leading-6 px-6 py-2.5 text-center"
-            >
-              Register
-            </button>
+            <Link href="https://tix.africa/discover/grama2024" target="_blank">
+              <button
+                type="button"
+                className="bg-primary hover:bg-primary-600 font-bold rounded-2xl text-black md:text-xl text-sm leading-6 px-6 py-2.5 text-center"
+              >
+                Register
+              </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -175,17 +178,19 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <Button
-              color="primary"
-              size="lg"
-              radius="md"
-              className="text-black md:text-xl/4 text-sm tracking-wide font-extrabold py-4 px-6"
-              endContent={
-                <FiArrowRightCircle className="md:w-6 md:h-6 w-4 h-4" />
-              }
-            >
-              Get Your Tickets
-            </Button>
+            <Link href="https://tix.africa/discover/grama2024" target="_blank">
+              <Button
+                color="primary"
+                size="lg"
+                radius="md"
+                className="text-black md:text-xl/4 text-sm tracking-wide font-extrabold py-4 px-6"
+                endContent={
+                  <FiArrowRightCircle className="md:w-6 md:h-6 w-4 h-4" />
+                }
+              >
+                Get Your Tickets
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -269,17 +274,22 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="text-center md:text-start">
-                      <Button
-                        color="primary"
-                        size="lg"
-                        radius="md"
-                        className="text-black md:text-lg/4 text-sm tracking-wide font-extrabold py-3 px-5"
-                        endContent={
-                          <FiArrowRightCircle className="md:w-6 md:h-6 w-4 h-4" />
-                        }
+                      <Link
+                        href="https://tix.africa/discover/grama2024"
+                        target="_blank"
                       >
-                        Reserve Seat
-                      </Button>
+                        <Button
+                          color="primary"
+                          size="lg"
+                          radius="md"
+                          className="text-black md:text-lg/4 text-sm tracking-wide font-extrabold py-3 px-5"
+                          endContent={
+                            <FiArrowRightCircle className="md:w-6 md:h-6 w-4 h-4" />
+                          }
+                        >
+                          Reserve Seat
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -308,14 +318,15 @@ export default function Home() {
               <div className="flex items-center space-x-6 flex-nowrap">
                 <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
                   <div className="">
-                    <Image src={EmptySpeaker} className="mx-auto" alt="Speaker 4" />
+                    <Image src={Speaker5} className="mx-auto" alt="Speaker 4" />
                   </div>
                   <div className="text-center space-y-1">
                     <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
                       LATEEF SURAKATU
                     </h6>
                     <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                      CEO, UNKNOWN COMPANY
+                      Partner and Head, Business Advisory Services, Andersen,
+                      Nigeria
                     </p>
                   </div>
                 </div>
@@ -347,27 +358,35 @@ export default function Home() {
                 </div>
                 <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
                   <div className="">
-                    <Image src={EmptySpeaker} className="mx-auto" alt="Speaker 3" />
+                    <Image
+                      src={EmptySpeaker}
+                      className="mx-auto"
+                      alt="Speaker 3"
+                    />
                   </div>
                   <div className="text-center space-y-1">
                     <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
                       ABDUR-RASHEED AJAO
                     </h6>
                     <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                      CEO, UNKNOWN COMPANY
+                      Founder/CEO, Zulfah Academy
                     </p>
                   </div>
                 </div>
                 <div className="space-y-2 md:space-y-4 min-w-72 min-h-80 lg:min-w-[340px] lg:min-h-[370px]">
                   <div className="">
-                    <Image src={EmptySpeaker} className="mx-auto" alt="Speaker 3" />
+                    <Image
+                      src={EmptySpeaker}
+                      className="mx-auto"
+                      alt="Speaker 3"
+                    />
                   </div>
                   <div className="text-center space-y-1">
                     <h6 className="md:text-2xl/5 text-base/5 font-extrabold md:text-nowrap text-white tracking-wide">
                       DR HALIMAT ADEDEJI-ADENOLA
                     </h6>
                     <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                      CEO, UNKNOWN COMPANY
+                      Public Health Pharmacist & Sustainability Advocate
                     </p>
                   </div>
                 </div>
@@ -413,11 +432,14 @@ export default function Home() {
                     Get your ticket, do not miss out!
                   </h3>
                 </div>
-                <div className="max-w-md space-y-2 md:space-y-4">
+                <div className="max-w-lg space-y-2 md:space-y-4">
                   <p className="text-white text-sm/7 md:text-lg/7 font-medium tracking-wide">
-                    Lorem ipsum dolor sit amet consectetur. Dui sed sed mattis
-                    id elit. Morbi pharetra sagittis non massa iaculis neque
-                    cras aliquet. At vulputate vomsan velit.
+                    The conference will delve into various aspects of the{" "}
+                    <b>&quot;Future of Work&quot;</b> theme, exploring topics
+                    such as; The rise of automation and artificial intelligence,
+                    and their impact on the job market, The emergence of new
+                    skill sets and industries, Strategies for career development
+                    in an uncertain job market, and many more.
                   </p>
                   <div className="flex items-center justify-between">
                     <p className="text-primary text-sm/6 md:text-lg/6 tracking-wide font-extrabold">
@@ -430,17 +452,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-8 md:mt-16">
-                <Button
-                  color="primary"
-                  size="lg"
-                  radius="md"
-                  className="text-black md:text-sm/4 text-xs tracking-wide font-extrabold py-1 px-6"
-                  endContent={
-                    <FiArrowRightCircle className="md:w-6 md:h-6 w-4 h-4" />
-                  }
+                <Link
+                  href="https://tix.africa/discover/grama2024"
+                  target="_blank"
                 >
-                  Buy Ticket
-                </Button>
+                  <Button
+                    color="primary"
+                    size="lg"
+                    radius="md"
+                    className="text-black md:text-sm/4 text-xs tracking-wide font-extrabold py-1 px-6"
+                    endContent={
+                      <FiArrowRightCircle className="md:w-6 md:h-6 w-4 h-4" />
+                    }
+                  >
+                    Buy Ticket
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="">
@@ -489,19 +516,21 @@ export default function Home() {
                       <p
                         className={`${plusJakartaSans.className} text-white text-sm/6 font-normal md:text-lg/6`}
                       >
-                        For sponsorship and advert placement, Please reach uut
+                        For sponsorship and advert placement, Please reach out
                         to us
                       </p>
                     </div>
                   </div>
                   <div className="">
-                    <Button
-                      color="primary"
-                      radius="full"
-                      className="text-black md:text-lg/4 text-sm tracking-wide font-extrabold py-0.5 px-8"
-                    >
-                      Contact Now
-                    </Button>
+                    <Link href="tel:+2348098081287">
+                      <Button
+                        color="primary"
+                        radius="full"
+                        className="text-black md:text-lg/4 text-sm tracking-wide font-extrabold py-0.5 px-8"
+                      >
+                        Contact Now
+                      </Button>
+                    </Link>
                   </div>
                 </div>
                 <div className="space-y-3 md:space-y-5">
@@ -512,11 +541,11 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-2 md:space-x-4">
                     <div className="">
-                      <MdOutlinePhone className="text-primary w-5 h-5 md:w-7 md:h-7" />
+                      <MdOutlinePhone className="text-primary w-4 h-4 md:w-7 md:h-7" />
                     </div>
                     <div className="text-white">
                       <p
-                        className={`${plusJakartaSans.className} text-sm md:text-lg/6 font-medium tracking-wide`}
+                        className={`${plusJakartaSans.className} text-xs md:text-lg/6 font-medium tracking-wide`}
                       >
                         0813 346 5044
                       </p>
@@ -524,11 +553,11 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-2 md:space-x-4">
                     <div className="">
-                      <MdOutlineMail className="text-primary w-5 h-5 md:w-7 md:h-7" />
+                      <MdOutlineMail className="text-primary w-4 h-4 md:w-7 md:h-7" />
                     </div>
                     <div className="text-white">
                       <p
-                        className={`${plusJakartaSans.className} text-sm md:text-lg/6 font-medium tracking-wide`}
+                        className={`${plusJakartaSans.className} text-xs md:text-lg/6 font-medium tracking-wide`}
                       >
                         grama@mssnlagos.net
                       </p>
