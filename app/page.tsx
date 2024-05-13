@@ -409,10 +409,10 @@ export default function Home() {
                   </div>
                   <div className="text-center space-y-1">
                     <h6 className="md:text-2xl/5 text-base/5 font-extrabold text-white tracking-wide">
-                      ABDUL-LATEEF ADEDEJI
+                      ABDULLATEEF ADEDEJI
                     </h6>
                     <p className="text-primary text-xs/4 md:text-base/4 font-normal tracking-normal">
-                      The Progressive Teacher Expertise
+                      The Flipped Classroom Expert
                     </p>
                   </div>
                 </div>
