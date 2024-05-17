@@ -98,7 +98,7 @@ export default function Home() {
             </span>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Link href="https://tix.africa/discover/grama2024" target="_blank">
+            <Link href="https://forms.gle/TtcniETgrPSFUeb77" target="_blank">
               <button
                 type="button"
                 className="bg-primary hover:bg-primary-600 font-bold rounded-2xl text-black md:text-xl text-sm leading-6 px-6 py-2.5 text-center"
@@ -178,7 +178,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <Link href="https://tix.africa/discover/grama2024" target="_blank">
+            <Link href="https://forms.gle/TtcniETgrPSFUeb77" target="_blank">
               <Button
                 color="primary"
                 size="lg"
@@ -275,7 +275,7 @@ export default function Home() {
                     </div>
                     <div className="text-center md:text-start">
                       <Link
-                        href="https://tix.africa/discover/grama2024"
+                        href="https://forms.gle/TtcniETgrPSFUeb77"
                         target="_blank"
                       >
                         <Button
@@ -453,7 +453,7 @@ export default function Home() {
               </div>
               <div className="mt-8 md:mt-16">
                 <Link
-                  href="https://tix.africa/discover/grama2024"
+                  href="https://forms.gle/TtcniETgrPSFUeb77"
                   target="_blank"
                 >
                   <Button
